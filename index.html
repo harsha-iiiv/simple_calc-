@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+  <div class="container">
+    <div class="container" id="title">
+      <h1 class="text-center" style="padding-right: 600px;">
+Calc      </h1> 
+    </div>
+    <div class="container" id="calcs-section">
+      <div class="row" style="
+  width: 50%;">
+        <input id="display" style="height: 50px;" class="col-xs-12 text-right calcs" type="text" name="input" size="16">
+      </div>
+    </div>
+    <div class="container" id="calc-buttons">
+      <div class="row" style="
+  width: 50%;">
+        <button class="btn btn-lg btn-default col-xs-12" onClick="cal('ac');">AC</button>
+      
+      </div>
+      <div class="row" style="
+  width: 50%;">
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(7);">7</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(8);">8</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(9);">9</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(' * ');">&times</button>
+      </div>
+      <div class="row" style="
+  width: 50%;">
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(4);">4</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(5);">5</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(6);">6</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(' - ');">-</button>
+      </div>
+      <div class="row" style="
+  width: 50%;">
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(1);">1</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(2);">2</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(3);">3</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(' + ');">+</button>
+      </div>
+      <div class="row" style="
+  width: 50%; ">
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(0);">0</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal('.');">.</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal('eval');">=</button>
+        <button class="btn btn-lg btn-default col-xs-3" onClick="cal(' / ');">/</button>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="calc.js"></script>
+
+</body>
+</html>
